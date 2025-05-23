@@ -11,7 +11,6 @@ on:
         options:
         - android-14.0
         - android-12.1
-        - android-11.0
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
