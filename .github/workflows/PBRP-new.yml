@@ -20,11 +20,11 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree URL'
         required: true
-        default: 'https://github.com/enter_username/repo_name'
+        default: 'https://github.com/TegarXLu/Recovery_device_Garnet'
       DEVICE_TREE_BRANCH:
         description: 'Device Tree Branch (optional)'
         required: false
-        default: ''
+        default: 'PBRP'
       BUILD_TARGET:
         description: 'Build Target (use "pbrp" for Android 11+)'
         required: true
@@ -43,7 +43,7 @@ on:
 jobs:
   build:
     name: Build PBRP by ${{ github.actor }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       DEBIAN_FRONTEND: noninteractive
